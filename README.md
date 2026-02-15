@@ -1,2 +1,0 @@
-# menudeo
-wakavapes menudeo 
