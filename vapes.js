@@ -146,7 +146,7 @@ let listaProductos = [
         { nombre: "Mixed Berries", disponible: true },
         { nombre: "Crazy Berry", disponible: true }
     ] },
-    { id: 7, categoria: 'vapes', activo: true, orden: 7, agotado: false, nombre: "EB Design TE6000",   modelo: "6000 Puffs", precio: 14, img: "img/vapes/ebdesing_te_6k.webp",   sabores: [
+    { id: 7, categoria: 'vapes', activo: false, orden: 7, agotado: false, nombre: "EB Design TE6000",   modelo: "6000 Puffs", precio: 14, img: "img/vapes/ebdesing_te_6k.webp",   sabores: [
         { nombre: "Ice Mint", disponible: true },
         { nombre: "Juicy Peach", disponible: true },
         { nombre: "Key West", disponible: true },
@@ -159,7 +159,7 @@ let listaProductos = [
         { nombre: "Clear", disponible: true },
         { nombre: "Hawaii Punch", disponible: true }
     ] },
-    { id: 8, categoria: 'vapes', activo: true, orden: 8, agotado: false, nombre: "Elux Cyberover",     modelo: "18000 Puffs", precio: 65, img: "img/vapes/elux_18k.webp",       sabores: [
+    { id: 8, categoria: 'vapes', activo: false, orden: 8, agotado: false, nombre: "Elux Cyberover",     modelo: "18000 Puffs", precio: 65, img: "img/vapes/elux_18k.webp",       sabores: [
         { nombre: "Confusion", disponible: true }
     ] },
     { id: 9, categoria: 'vapes', activo: true, orden: 9, agotado: false, nombre: "Fire Rose 25K",      modelo: "25000 Puffs", precio: 45, img: "img/vapes/fire_rose_25k.webp",   sabores: [
@@ -202,7 +202,7 @@ let listaProductos = [
         { nombre: "Cherry Lime", disponible: true },
         { nombre: "Blueberry Raspberry", disponible: true }
     ] },
-    { id: 14, categoria: 'vapes', activo: true, orden: 14, agotado: false, nombre: "Hand Shake 15K",     modelo: "15000 Puffs", precio: 55, img: "img/vapes/hand_shake_15k.webp", sabores: [
+    { id: 14, categoria: 'vapes', activo: true, orden: 14, agotado: false, nombre: "Hand Shake 15K",     modelo: "15000 Puffs", precio: 200, img: "img/vapes/hand_shake_15k.webp", sabores: [
         { nombre: "Blue Razz", disponible: true },
         { nombre: "Miami Mint", disponible: true },
         { nombre: "Apple Gummies", disponible: true },
@@ -288,7 +288,7 @@ let listaProductos = [
         { nombre: "Cherry Ice", disponible: true },
         { nombre: "Mango Peach Pineapple", disponible: true }
     ] },
-    { id: 25, categoria: 'vapes', activo: false, orden: 25, agotado: true, nombre: "Flonq Max 10K",      modelo: "10000 Puffs", precio: 45, img: "img/vapes/flonq_max_10k.webp",   sabores: [
+    { id: 25, categoria: 'vapes', activo: true, orden: 25, agotado: false, nombre: "Flonq Max 10K",      modelo: "10000 Puffs", precio: 190, img: "img/vapes/flonq_max_10k.webp",   sabores: [
         { nombre: "Cherry Peach Lemonade", disponible: true },
         { nombre: "Watermelon Ice", disponible: true },
         { nombre: "Blue Lemonade", disponible: true },
