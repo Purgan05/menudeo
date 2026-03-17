@@ -162,7 +162,7 @@ let listaProductos = [
     { id: 8, categoria: 'vapes', activo: false, orden: 8, agotado: false, nombre: "Elux Cyberover",     modelo: "18000 Puffs", precio: 65, img: "img/vapes/elux_18k.webp",       sabores: [
         { nombre: "Confusion", disponible: true }
     ] },
-    { id: 9, categoria: 'vapes', activo: true, orden: 9, agotado: false, nombre: "Fire Rose 25K",      modelo: "25000 Puffs", precio: 45, img: "img/vapes/fire_rose_25k.webp",   sabores: [
+    { id: 9, categoria: 'vapes', activo: false, orden: 9, agotado: false, nombre: "Fire Rose 25K",      modelo: "25000 Puffs", precio: 45, img: "img/vapes/fire_rose_25k.webp",   sabores: [
         { nombre: "Sour Apple", disponible: true },
         { nombre: "Sour Rainbow Candy", disponible: true },
         { nombre: "Watermelon Ice", disponible: true },
@@ -174,7 +174,7 @@ let listaProductos = [
         { nombre: "Banana Coconut", disponible: true },
         { nombre: "Blue Raspberry Magic Cotton", disponible: true }
     ] },
-    { id: 11, categoria: 'vapes', activo: true, orden: 11, agotado: false, nombre: "Frozeen 7K",         modelo: "7000 Puffs", precio: 20, img: "img/vapes/frozeen_7k.webp",    sabores: [
+    { id: 11, categoria: 'vapes', activo: false, orden: 11, agotado: false, nombre: "Frozeen 7K",         modelo: "7000 Puffs", precio: 20, img: "img/vapes/frozeen_7k.webp",    sabores: [
         { nombre: "Lush Ice", disponible: true },
         { nombre: "Red Apple", disponible: true },
         { nombre: "Strawberry Banana", disponible: true },
@@ -191,7 +191,7 @@ let listaProductos = [
         { nombre: "Mexican Mango", disponible: true },
         { nombre: "Miami Mint", disponible: true }
     ] },
-    { id: 13, categoria: 'vapes', activo: true, orden: 13, agotado: false, nombre: "Fuman Spirit 8K",    modelo: "8000 Puffs", precio: 25, img: "img/vapes/fuman_spirit_8k.webp", sabores: [
+    { id: 13, categoria: 'vapes', activo: false, orden: 13, agotado: false, nombre: "Fuman Spirit 8K",    modelo: "8000 Puffs", precio: 25, img: "img/vapes/fuman_spirit_8k.webp", sabores: [
         { nombre: "Wild Berries", disponible: true },
         { nombre: "Sweet Watermelon", disponible: true },
         { nombre: "Strawberry Mango Lime", disponible: true },
@@ -255,7 +255,7 @@ let listaProductos = [
         { nombre: "Strawberry Kiwi", disponible: true },
         { nombre: "Blue Cotton Candy", disponible: true }
     ] },
-    { id: 21, categoria: 'vapes', activo: true, orden: 21, agotado: false, nombre: "Novo Bar AL6000",    modelo: "6000 Puffs", precio: 25, img: "img/vapes/novo_bar_6k.webp",    sabores: [
+    { id: 21, categoria: 'vapes', activo: false, orden: 21, agotado: false, nombre: "Novo Bar AL6000",    modelo: "6000 Puffs", precio: 25, img: "img/vapes/novo_bar_6k.webp",    sabores: [
         { nombre: "Cranberry Grape", disponible: true },
         { nombre: "Passion Fruit Lemonade", disponible: true },
         { nombre: "Cherry Cola", disponible: true }
@@ -263,7 +263,7 @@ let listaProductos = [
     { id: 22, categoria: 'vapes', activo: false, orden: 22, agotado: false, nombre: "Starx 20K",          modelo: "20000 Puffs", precio: 55, img: "img/vapes/starx_20k.webp",      sabores: [
         { nombre: "Triple Berry", disponible: true }
     ] },
-    { id: 23, categoria: 'vapes', activo: true, orden: 23, agotado: false, nombre: "Bugatti 9K",        modelo: "9000 Puffs", precio: 45, img: "img/vapes/buggati_6k.webp",    sabores: [
+    { id: 23, categoria: 'vapes', activo: false, orden: 23, agotado: false, nombre: "Bugatti 9K",        modelo: "9000 Puffs", precio: 45, img: "img/vapes/buggati_6k.webp",    sabores: [
         { nombre: "Mint Ice", disponible: true },
         { nombre: "Black Ice", disponible: true },
         { nombre: "Coffee", disponible: true },
@@ -276,7 +276,7 @@ let listaProductos = [
         { nombre: "Double Apple", disponible: true },
         { nombre: "Mango Peach", disponible: true }
     ] },
-    { id: 24, categoria: 'vapes', activo: true, orden: 24, agotado: false, nombre: "Jooyo 10K",          modelo: "10000 Puffs", precio: 30, img: "img/vapes/jooyo_10k.webp",      sabores: [
+    { id: 24, categoria: 'vapes', activo: false, orden: 24, agotado: false, nombre: "Jooyo 10K",          modelo: "10000 Puffs", precio: 30, img: "img/vapes/jooyo_10k.webp",      sabores: [
         { nombre: "Mojito", disponible: true },
         { nombre: "Watermelon Ice", disponible: true },
         { nombre: "Kiwi Passion Fruit Guava", disponible: true },
@@ -306,7 +306,7 @@ let listaProductos = [
         { nombre: "Peach Strawberry", disponible: true },
         { nombre: "Blueberry Blue", disponible: true }
     ] },
-    { id: 27, categoria: 'vapes', activo: true, orden: 27, agotado: false, nombre: "True Story 15K",     modelo: "15000 Puffs", precio: 50, img: "img/vapes/true_history_20k.webp",  sabores: [
+    { id: 27, categoria: 'vapes', activo: false, orden: 27, agotado: false, nombre: "True Story 15K",     modelo: "15000 Puffs", precio: 50, img: "img/vapes/true_history_20k.webp",  sabores: [
         { nombre: "Grape Encounter", disponible: true },
         { nombre: "Leawles Mint", disponible: true },
         { nombre: "Peachy Heart", disponible: true },
