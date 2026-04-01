@@ -41,20 +41,21 @@ p, label, input, button, span, div, select, textarea, a {
     height: 10px;
 }
 
+/* FIX: Scrollbar theme aligned to blanco/azul */
 ::-webkit-scrollbar-track {
-    background: #1a1a1a; /* Fondo oscuro del riel */
-    border-left: 1px solid #2a2a2a;
+    background: rgba(243,248,255,0.85); /* suave fondo claro */
+    border-left: 1px solid rgba(14,75,180,0.04);
 }
 
 ::-webkit-scrollbar-thumb {
-    /* Degradado gris metálico vertical */
-    background: linear-gradient(180deg, #4a4a4a, #6a6a6a, #888888, #6a6a6a, #4a4a4a);
-    border-radius: 5px;
-    border: 2px solid #1a1a1a; /* Espacio para efecto flotante */
+    /* Degradado azul suave vertical acorde al tema */
+    background: linear-gradient(180deg, var(--blue-light) 0%, var(--primary-blue) 60%, var(--blue-dark) 100%);
+    border-radius: 6px;
+    border: 2px solid rgba(255,255,255,0.8); /* borde claro para efecto flotante */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #888888; /* Brillo más intenso al pasar el mouse */
+    background: linear-gradient(180deg, #9ed1ff 0%, #2f7be0 60%, #062d66 100%);
 }
 
 /* ==========================================================================
