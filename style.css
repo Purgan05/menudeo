@@ -68,8 +68,8 @@ p, label, input, button, span, div, select, textarea, a {
     --gold-gradient: linear-gradient(135deg, #1f6bb5 0%, #3a8fd4 50%, #b8d9f5 100%);
 
     /* --- FONDOS --- */
-    --black-bg: #e8f2fb;        /* Fondo principal: azul muy claro */
-    --card-bg: #f0f7ff;         /* Fondo de tarjetas (fallback) */
+    --black-bg: #f8fbff;        /* Fondo principal: casi blanco con toque azul */
+    --card-bg: #ffffff;         /* Fondo de tarjetas (fallback) */
 
     /* --- ESTADOS Y ALERTAS --- */
     --rojo-alerta: #c0392b;     /* Rojo para alertas y badges */
@@ -80,19 +80,19 @@ p, label, input, button, span, div, select, textarea, a {
     --transicion-lenta: 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     --transicion-rapida: 0.2s ease-in-out;
 
-    /* --- EFECTO VIDRIO (GLASSMORPHISM AZUL/BLANCO) --- */
-    --glass-bg: rgba(220, 238, 255, 0.70); /* Azul muy claro con 70% de transparencia */
-    --glass-border: 1px solid rgba(58, 143, 212, 0.25); /* Borde azul translúcido */
-    --glass-border-hover: 1px solid rgba(58, 143, 212, 0.6); /* Borde más visible al hover */
+    /* --- EFECTO VIDRIO (GLASSMORPHISM AGUA/BLANCO) --- */
+    --glass-bg: rgba(255, 255, 255, 0.55); /* Blanco translúcido tipo gota de agua */
+    --glass-border: 1px solid rgba(58, 143, 212, 0.18); /* Borde azul muy sutil */
+    --glass-border-hover: 1px solid rgba(58, 143, 212, 0.45); /* Borde más visible al hover */
     --glass-blur: blur(16px); /* Desenfoque fuerte del fondo */
-    --glass-shadow: 0 10px 40px -10px rgba(30, 80, 160, 0.18); /* Sombra azulada para elevación */
+    --glass-shadow: 0 10px 40px -10px rgba(30, 80, 160, 0.12); /* Sombra azulada suave */
 }
 
 /* ==========================================================================
    3. CUERPO Y FONDO (AMBIENTACIÓN)
    ========================================================================== */
 body {
-    background: #d6eaf8;
+    background: #f5f9ff;
     color: #0d2a4a;
     /* Espacio reservado para el Nav fijo y el Ticker superior */
     padding-top: 90px;
@@ -144,16 +144,16 @@ body.modal-open {
      left: 0;
      width: 100%;
      height: 35px;
-     /* Azul claro semi-transparente */
-     background: rgba(200, 228, 252, 0.95);
+     /* Blanco puro semi-transparente tipo cristal */
+     background: rgba(255, 255, 255, 0.92);
      backdrop-filter: blur(20px) saturate(160%);
      -webkit-backdrop-filter: blur(20px) saturate(160%);
-     border-bottom: 1px solid rgba(100, 170, 230, 0.3);
+     border-bottom: 1px solid rgba(58, 143, 212, 0.15);
      z-index: 800;
      display: flex;
      justify-content: center;
      align-items: center;
-     box-shadow: 0 2px 12px rgba(30, 100, 200, 0.12);
+     box-shadow: 0 2px 12px rgba(30, 100, 200, 0.08);
 }
 
 .ticker-wrapper {
@@ -246,19 +246,19 @@ nav {
     top: 35px;
     left: 0;
     width: 100%;
-    /* Azul muy claro semi-transparente igual que el ticker */
-    background: rgba(200, 228, 252, 0.95);
-    border-bottom: 1px solid rgba(100, 170, 230, 0.3);
+    /* Blanco puro tipo cristal igual que el ticker */
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom: 1px solid rgba(58, 143, 212, 0.15);
     z-index: 2200;
     padding: 15px 25px;
     backdrop-filter: blur(32px) saturate(180%);
     -webkit-backdrop-filter: blur(32px) saturate(180%);
-    box-shadow: 0 2px 16px rgba(30, 100, 200, 0.12);
+    box-shadow: 0 2px 16px rgba(30, 100, 200, 0.08);
     transition: all 0.3s ease;
 }
 
 nav:hover {
-    background: rgba(210, 233, 255, 0.98);
+    background: rgba(255, 255, 255, 0.97);
 }
 
 .nav-content {
@@ -456,16 +456,16 @@ nav:hover {
 .nav-buttons { display: flex; gap: 20px; align-items: center; }
 
 .btn-icon-nav {
-    background: rgba(180, 220, 255, 0.5);
-    border: 1px solid rgba(100, 170, 230, 0.4);
-    color: #0d2a4a;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.55), rgba(220, 240, 255, 0.30));
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: #1f6bb5;
     font-size: 1.8rem;
     cursor: pointer;
     position: relative;
     transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
     display: flex; align-items: center; justify-content: center;
-    backdrop-filter: blur(16px) saturate(140%);
-    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-radius: 50%;
     width: 48px !important;
     height: 48px !important;
@@ -477,24 +477,24 @@ nav:hover {
     padding: 0 !important;
     margin: 0;
     flex-shrink: 0;
-    box-shadow: 0 4px 16px rgba(30, 100, 200, 0.1), inset 0 1px 0 rgba(255,255,255,0.5);
+    box-shadow: 0 8px 24px rgba(30, 100, 200, 0.12), inset 0 1px 0 rgba(255,255,255,0.8), inset 0 -1px 0 rgba(100, 170, 230, 0.1);
     -webkit-tap-highlight-color: transparent;
     overflow: visible;
     touch-action: manipulation;
 }
 
 .btn-icon-nav:hover {
-    background: rgba(160, 210, 255, 0.7);
-    border-color: rgba(58, 143, 212, 0.6);
-    color: #0d2a4a;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.70), rgba(200, 230, 255, 0.45));
+    border-color: rgba(58, 143, 212, 0.35);
+    color: #1f6bb5;
     transform: translateY(-2px) scale(1.08);
-    box-shadow: 0 8px 24px rgba(30, 100, 200, 0.2), inset 0 1px 0 rgba(255,255,255,0.5);
+    box-shadow: 0 12px 28px rgba(30, 100, 200, 0.18), inset 0 1px 0 rgba(255,255,255,0.9);
     filter: brightness(1.05);
 }
 
 .btn-icon-nav:active {
     transform: translateY(0) scale(1);
-    box-shadow: 0 2px 8px rgba(30, 100, 200, 0.15), inset 0 1px 0 rgba(255,255,255,0.4);
+    box-shadow: 0 4px 12px rgba(30, 100, 200, 0.12), inset 0 1px 0 rgba(255,255,255,0.7);
 }
 
 .badge-count {
@@ -509,7 +509,7 @@ nav:hover {
     border-radius: 50%;
     display: flex; justify-content: center; align-items: center;
     font-weight: 900;
-    border: 2px solid #c8e4fc;
+    border: 2px solid #ffffff;
     box-shadow: 0 3px 8px rgba(231, 76, 60, 0.5), 0 0 12px rgba(231, 76, 60, 0.3);
     animation: badgePulse 2s ease-in-out infinite;
     z-index: 10;
@@ -521,8 +521,8 @@ nav:hover {
 }
 
 .btn-inicio {
-    background: rgba(180, 220, 255, 0.5); border: 1px solid rgba(100, 170, 230, 0.4);
-    color: #0d2a4a; padding: 0 !important; border-radius: 50%;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.55), rgba(220, 240, 255, 0.30)); border: 1px solid rgba(255, 255, 255, 0.7);
+    color: #1f6bb5; padding: 0 !important; border-radius: 50%;
     cursor: pointer; transition: 0.15s; font-size: 1.6rem;
     display: flex; align-items: center; justify-content: center;
     width: 48px !important; height: 48px !important;
@@ -533,6 +533,9 @@ nav:hover {
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
     margin: 0;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0 8px 24px rgba(30, 100, 200, 0.12), inset 0 1px 0 rgba(255,255,255,0.8), inset 0 -1px 0 rgba(100, 170, 230, 0.1);
     -webkit-tap-highlight-color: transparent;
     overflow: hidden;
 }
@@ -540,15 +543,15 @@ nav:hover {
 /* Solo aplicar hover en dispositivos con mouse */
 @media (hover: hover) and (pointer: fine) {
     .btn-inicio:hover {
-        background: rgba(160, 210, 255, 0.7); color: #0d2a4a;
-        box-shadow: 0 0 20px rgba(30, 100, 200, 0.15);
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.70), rgba(200, 230, 255, 0.45)); color: #1f6bb5;
+        box-shadow: 0 12px 28px rgba(30, 100, 200, 0.18), inset 0 1px 0 rgba(255,255,255,0.9);
     }
 }
 
 /* Estado activo para touch y click */
 .btn-inicio:active {
-    background: rgba(160, 210, 255, 0.7); color: #0d2a4a;
-    box-shadow: 0 0 20px rgba(30, 100, 200, 0.15);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.70), rgba(200, 230, 255, 0.45)); color: #1f6bb5;
+    box-shadow: 0 4px 12px rgba(30, 100, 200, 0.12), inset 0 1px 0 rgba(255,255,255,0.7);
     transform: scale(0.95);
 }
 
@@ -702,8 +705,8 @@ nav:hover {
     border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
-    background: #e8f4ff;
-    border: 2px solid rgba(100, 170, 230, 0.35);
+    background: #ffffff;
+    border: 2px solid rgba(100, 170, 230, 0.2);
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     box-shadow: 0 8px 30px rgba(30, 100, 200, 0.15);
     width: 175px;
@@ -761,7 +764,7 @@ nav:hover {
     height: 30%;
     padding: 10px 15px;
     text-align: center;
-    background: rgba(220, 238, 255, 0.95);
+    background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-top: 1px solid rgba(100, 170, 230, 0.25);
@@ -1191,7 +1194,7 @@ header {
 }
 
 .tarjeta-producto {
-    background: linear-gradient(145deg, #ddeeff 0%, #e8f4ff 100%);
+    background: linear-gradient(145deg, #ffffff 0%, #f5faff 100%);
     border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
@@ -1248,7 +1251,7 @@ header {
     overflow: hidden;
     position: relative;
     border-bottom: 1px solid rgba(100, 170, 230, 0.2);
-    background: linear-gradient(180deg, #d6eaf8 0%, #c0ddf5 100%);
+    background: linear-gradient(180deg, #f0f7ff 0%, #e8f2ff 100%);
 }
 
 .img-wrapper img {
@@ -1382,15 +1385,15 @@ header {
     position: sticky;
     top: 110px;
     z-index: 100;
-    background: linear-gradient(180deg, #ddeeff 0%, #d0e8ff 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #f5faff 100%);
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(100, 170, 230, 0.25);
+    border-bottom: 1px solid rgba(100, 170, 230, 0.15);
     border-radius: 12px;
     margin-bottom: 15px;
-    box-shadow: 0 4px 20px rgba(30, 100, 200, 0.15);
+    box-shadow: 0 4px 20px rgba(30, 100, 200, 0.08);
 }
 
 .carrito-titulo {
@@ -1532,9 +1535,9 @@ header {
     /* Liquid Glass Effect - Fondo translúcido azul/blanco */
     background: linear-gradient(
         135deg,
-        rgba(180, 220, 255, 0.70) 0%,
-        rgba(200, 230, 255, 0.75) 50%,
-        rgba(180, 220, 255, 0.70) 100%
+        rgba(255, 255, 255, 0.65) 0%,
+        rgba(240, 250, 255, 0.70) 50%,
+        rgba(255, 255, 255, 0.65) 100%
     );
     display: flex;
     flex-direction: column;
@@ -1562,9 +1565,9 @@ header {
     /* Liquid Glass Card - Blanco/Azul */
     background: linear-gradient(
         145deg,
-        rgba(230, 244, 255, 0.92) 0%,
-        rgba(245, 251, 255, 0.96) 50%,
-        rgba(220, 240, 255, 0.92) 100%
+        rgba(255, 255, 255, 0.96) 0%,
+        rgba(248, 253, 255, 0.98) 50%,
+        rgba(255, 255, 255, 0.96) 100%
     );
     width: clamp(280px, 90vw, 520px);
     border-radius: clamp(16px, 4vw, 25px);
@@ -2074,7 +2077,7 @@ header {
    SECCIÓN PROMOCIONAL ESTILO AZLEON
    ========================================================================== */
 .promo-section {
-    background: #d6eaf8;
+    background: #f8fbff;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
@@ -2089,7 +2092,7 @@ header {
     align-items: center;
     gap: 40px;
     width: 100%;
-    background: linear-gradient(145deg, #ddeeff 0%, #d4e8fa 100%);
+    background: linear-gradient(145deg, #ffffff 0%, #f5faff 100%);
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid rgba(100, 170, 230, 0.35);
