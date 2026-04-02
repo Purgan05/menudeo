@@ -42,8 +42,8 @@ p, label, input, button, span, div, select, textarea, a {
 }
 
 ::-webkit-scrollbar-track {
-    background: #ddeeff; /* Fondo azul muy claro del riel */
-    border-left: 1px solid #c5dcf5;
+    background: #f0f7ff; /* Fondo azul muy claro del riel */
+    border-left: 1px solid #e0eeff;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1604,9 +1604,9 @@ header {
     position: absolute;
     top: 12px;
     right: 12px;
-    background: rgba(180, 220, 255, 0.3);
-    color: #0d2a4a;
-    border: 1px solid rgba(100, 170, 230, 0.35);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.55), rgba(220, 240, 255, 0.30));
+    color: #1f6bb5;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     font-size: 1.2rem;
     border-radius: 50%;
     width: 44px;
@@ -1644,7 +1644,7 @@ header {
     display: flex; flex-direction: column;
     flex-grow: 1;
     scrollbar-width: thin;
-    scrollbar-color: #7aacda #ddeeff;
+    scrollbar-color: #a0c8e8 #f5faff;
 }
 
 /* Cabecera Modal */
@@ -1652,8 +1652,8 @@ header {
     position: relative;
     background: linear-gradient(
         180deg,
-        rgba(200, 230, 255, 0.6) 0%,
-        rgba(220, 240, 255, 0.8) 100%
+        rgba(255, 255, 255, 0.85) 0%,
+        rgba(245, 251, 255, 0.95) 100%
     );
     padding-bottom: 14px;
     backdrop-filter: blur(5px);
@@ -1667,9 +1667,9 @@ header {
     display: flex; justify-content: center; align-items: center;
     background: linear-gradient(
         180deg,
-        rgba(210, 235, 255, 0.6) 0%,
-        rgba(230, 245, 255, 0.7) 50%,
-        rgba(200, 228, 255, 0.8) 100%
+        rgba(255, 255, 255, 0.90) 0%,
+        rgba(245, 251, 255, 0.95) 50%,
+        rgba(240, 248, 255, 0.95) 100%
     );
     overflow: hidden;
 }
@@ -1686,8 +1686,8 @@ header {
 .btn-favorito-modal {
     position: absolute;
     top: clamp(10px, 2vh, 15px); right: clamp(10px, 2vh, 15px);
-    background: rgba(180, 220, 255, 0.25);
-    border: 1px solid rgba(100, 170, 230, 0.35);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.55), rgba(220, 240, 255, 0.30));
+    border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     width: clamp(38px, 9vw, 45px); height: clamp(38px, 9vw, 45px);
     font-size: clamp(1.4rem, 4vw, 1.8rem);
@@ -1721,7 +1721,7 @@ header {
 .precio-container {
     display: flex; justify-content: space-between; align-items: center;
     margin-top: 15px;
-    background: linear-gradient(135deg, rgba(200, 230, 255, 0.9) 0%, rgba(220, 242, 255, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(245, 251, 255, 0.95) 100%);
     padding: clamp(8px, 2vw, 10px) clamp(12px, 3vw, 20px);
     border-radius: 15px;
     border: 1px solid rgba(100, 170, 230, 0.4);
@@ -1747,7 +1747,7 @@ header {
 .grid-variantes { display: flex; flex-wrap: wrap; gap: 10px; }
 
 .chip-variante {
-    background: linear-gradient(145deg, #e0f0ff 0%, #d0e8ff 100%);
+    background: linear-gradient(145deg, #f5faff 0%, #eef6ff 100%);
     border: 1px solid rgba(100, 170, 230, 0.4);
     color: #1f6bb5;
     padding: 10px 18px;
@@ -1758,7 +1758,7 @@ header {
     font-weight: 500;
 }
 
-.chip-variante:hover { border-color: rgba(58, 143, 212, 0.7); background: linear-gradient(145deg, #cce5ff 0%, #b8d9f5 100%); }
+.chip-variante:hover { border-color: rgba(58, 143, 212, 0.6); background: linear-gradient(145deg, #e8f4ff 0%, #ddeeff 100%); }
 
 .chip-variante.activo {
     background: linear-gradient(135deg, #3a8fd4 0%, #1f6bb5 100%);
@@ -1779,7 +1779,7 @@ header {
 
 .input-modal-texto {
     width: 100%; padding: 15px;
-    background: linear-gradient(145deg, #e8f4ff 0%, #ddeeff 100%); border: 1px solid rgba(100, 170, 230, 0.45);
+    background: linear-gradient(145deg, #ffffff 0%, #f5faff 100%); border: 1px solid rgba(100, 170, 230, 0.35);
     color: #0d2a4a; border-radius: 12px;
     font-size: 1rem; font-weight: bold; text-align: center;
 }
@@ -1794,8 +1794,8 @@ header {
 
 .control-cantidad {
     display: flex; align-items: center; justify-content: space-between;
-    background: linear-gradient(145deg, #ddeeff 0%, #d0e8ff 100%); border-radius: 15px; padding: 5px 8px;
-    border: 1px solid rgba(100, 170, 230, 0.35);
+    background: linear-gradient(145deg, #ffffff 0%, #f5faff 100%); border-radius: 15px; padding: 5px 8px;
+    border: 1px solid rgba(100, 170, 230, 0.25);
 }
 .btn-cant {
     background: linear-gradient(140deg, rgba(180, 220, 255, 0.55), rgba(140, 200, 255, 0.30));
@@ -1846,10 +1846,10 @@ header {
 /* Toggle Pago */
 .toggle-pago {
     display: flex;
-    background: linear-gradient(145deg, #ddeeff 0%, #d0e8ff 100%);
+    background: linear-gradient(145deg, #ffffff 0%, #f5faff 100%);
     border-radius: 15px;
     padding: 5px;
-    border: 1px solid rgba(100, 170, 230, 0.35);
+    border: 1px solid rgba(100, 170, 230, 0.25);
     box-shadow: 0 4px 15px rgba(30, 100, 200, 0.1);
     position: relative;
     overflow: hidden;
@@ -1911,7 +1911,7 @@ header {
 
 /* --- FOOTER MODAL (STICKY) --- */
 .footer-compra-sticky {
-    background: linear-gradient(180deg, #d6eaf8 0%, #cce2f5 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #f5faff 100%);
     padding: 18px 20px;
     border-top: 1px solid rgba(100, 170, 230, 0.35);
     display: flex; justify-content: space-between; align-items: center;
@@ -1998,13 +1998,14 @@ header {
 
 .advertencia-pago {
     font-size: 0.75rem; color: #7aacda; text-align: center;
-    padding: 10px 25px 5px; background: #e8f4ff; font-style: italic;
+    padding: 10px 25px 5px; background: #ffffff; font-style: italic;
 }
 
 /* --- RECOMENDADOS (SCROLL HORIZONTAL) --- */
 .seccion-recomendados {
-    padding: 30px 25px; background: linear-gradient(180deg, #e0f0ff 0%, #d6eaf8 100%);
-    border-top: 1px solid rgba(100, 170, 230, 0.25); margin-bottom: 90px;
+    padding: 30px 25px 40px; background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    border-top: 1px solid rgba(100, 170, 230, 0.15); margin-bottom: 0;
+    border-radius: 0 0 clamp(16px, 4vw, 25px) clamp(16px, 4vw, 25px);
 }
 .header-recomendados { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
 .seccion-recomendados h3 { color: #1f6bb5; font-size: 1.1rem; font-weight: 400; margin: 0; }
@@ -2041,7 +2042,7 @@ header {
 
 .card-recomendada {
     min-width: 150px; max-width: 150px;
-    background: linear-gradient(145deg, #e8f4ff 0%, #ddeeff 100%);
+    background: linear-gradient(145deg, #ffffff 0%, #f5faff 100%);
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
@@ -2786,7 +2787,7 @@ footer {
     bottom: 100px;
     width: min(360px, calc(100vw - 36px));
     max-height: calc(100vh - 160px);
-    background: rgba(210, 235, 255, 0.65);
+    background: rgba(255, 255, 255, 0.72);
     border: 1px solid rgba(100, 170, 230, 0.28);
     backdrop-filter: blur(40px) saturate(180%);
     -webkit-backdrop-filter: blur(40px) saturate(180%);
@@ -3023,7 +3024,7 @@ footer {
 .floating-cart-footer {
     padding: 16px 14px;
     border-top: 1px solid rgba(100, 170, 230, 0.2);
-    background: rgba(200, 230, 255, 0.7);
+    background: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     flex-shrink: 0;
